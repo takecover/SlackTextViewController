@@ -87,6 +87,8 @@ NSString * const SLKTextInputbarDidMoveNotification =   @"SLKTextInputbarDidMove
     self.contentInset = UIEdgeInsetsMake(5.0, 8.0, 5.0, 8.0);
     self.backgroundColor = [UIColor colorWithRed:247.0/255.0 green:247.0/255.0 blue:247.0/255.0 alpha:1.0]; //UIToolbar native bar tint color
 
+    [self layoutSubViews];
+
     [self addSubview:self.editorContentView];
     [self addSubview:self.leftButton];
     [self addSubview:self.rightButton];
